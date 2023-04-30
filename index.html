@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- aca van librerias, configuraciones, del sitio -->
+		<title>AJAX</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="ajax, sergio arboleda, athenea, web">
+		<meta name="description" content="esto es un ejemplo de uso de ajax">
+		<meta name="author" content="Jairo Miller Urrego jairo.urrego.at@usa.edu.co">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="funciones_carro.js"></script>
+		<script type="text/javascript" src="funciones_clientes.js"></script>
+		<script type="text/javascript" src="funciones_mensajes.js"></script>
+	</head>
+	<body>
+		<!-- contenido que se va a mostrar al usuario -->
+		<div>
+			<h1 align="center">AJAX</h1>
+		</div>
+		<div>
+			<h3>Carros</h3>
+			<input type="number" id="id" placeholder="codigo">
+			<input type="number" id="category_id" placeholder="categoria">
+			<input type="text" id="brand" placeholder="marca">
+			<input type="number" id="model" placeholder="modelo (a&ntilde;o)">
+			<button onclick="saveCar();">Guardar</button>
+			<button onclick="updateCostume();">Actualizar</button>
+			<button onclick="getCar()">Consultar Carros</button>
+		</div>
+		<div>
+			<h3>Clientes</h3>
+			<input type="number" id="id_cliente" placeholder="id">
+			<input type="text" id="name" placeholder="nombre">
+			<input type="email" id="email" placeholder="correo">
+			<input type="number" id="age" placeholder="edad">
+			<button onclick="saveClientes();">Guardar</button>
+			<button onclick="updateCliente();">Actualizar</button>
+			<button onclick="getClientes()">Consultar Clientes</button>
+		</div>
+		<div>
+			<h3>Mensajes</h3>
+			<input type="number" id="id_mensaje" placeholder="id">
+			<input type="text" id="messagetext" placeholder="mensaje">
+			<button onclick="saveMensaje();">Guardar</button>
+			<button onclick="updateMensaje();">Actualizar</button>
+			<button onclick="getMensajes()">Consultar Mensajes</button>
+		</div>
+
+		<br />
+		<div id="result">
+			<!-- interna -->
+		</div>
+	</body>
+</html>
